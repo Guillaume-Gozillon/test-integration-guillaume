@@ -4,11 +4,15 @@
   }
 }
 
+.section1 {
+  margin-bottom: 4rem;
+}
+
 .services-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   .services-cards {
-    width: 20rem;
+    width: 21rem;
     justify-self: center;
     & img {
       width: 100%;
@@ -25,10 +29,10 @@
     & p {
       color: $grey;
       line-height: 1.6rem;
+      font-size: 0.9rem;
     }
     & a {
       color: $blue;
     }
   }
 }
-

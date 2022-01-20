@@ -7,6 +7,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -228,6 +229,10 @@ header a:hover {
   margin-top: 9rem;
 }
 
+.section1 {
+  margin-bottom: 4rem;
+}
+
 .services-container {
   display: -ms-grid;
   display: grid;
@@ -236,7 +241,7 @@ header a:hover {
 }
 
 .services-container .services-cards {
-  width: 20rem;
+  width: 21rem;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -259,18 +264,107 @@ header a:hover {
 .services-container .services-cards p {
   color: #94a2b3;
   line-height: 1.6rem;
+  font-size: 0.9rem;
 }
 
 .services-container .services-cards a {
   color: #299ef3;
 }
 
-.purple {
+.section2 {
   position: relative;
+}
+
+.section2::before, .section2::after {
+  content: '';
+  position: absolute;
+  right: -5%;
+  left: -5%;
+  height: 120px;
+  background: white;
+  -webkit-clip-path: ellipse(50% 60% at 50% 100%);
+  clip-path: ellipse(60% 60% at 50% 100%);
+}
+
+.section2::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 0;
+}
+
+.section2::after {
+  bottom: 0;
+}
+
+.section2 ::-moz-selection {
+  color: #7854f7;
+  background-color: white;
+}
+
+.section2 ::selection {
+  color: #7854f7;
+  background-color: white;
 }
 
 .purple-container {
   background: #7854f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.purple-container > * {
+  color: white;
+  margin: auto 2rem;
+}
+
+.purple-container h3 {
+  font-family: 'ABeeZee', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  line-height: 2.2rem;
+}
+
+.purple-container.right-section2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.purple-container .left-section2 {
+  padding-top: 8rem;
+}
+
+.purple-container .left-section2 .purple-content {
+  padding-top: 6rem;
+}
+
+.purple-container .purple-content {
+  width: 20rem;
+  height: 25rem;
+}
+
+.purple-container img {
+  width: 23rem;
+  z-index: 1;
+}
+
+.purple-container p {
+  line-height: 1.63;
+  margin-bottom: 2.4rem;
+}
+
+.purple-container a {
+  padding: 1rem 2.5rem;
+  background: #70c217;
+  border-radius: 2rem;
+  color: white;
 }
 
 ::-moz-selection {
@@ -281,5 +375,9 @@ header a:hover {
 ::selection {
   color: white;
   background-color: #7854f7;
+}
+
+.section3 {
+  height: 45vh;
 }
 /*# sourceMappingURL=app.css.map */
