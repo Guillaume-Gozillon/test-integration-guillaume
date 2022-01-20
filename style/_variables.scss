@@ -1,0 +1,10 @@
+@mixin flex-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+$dark: #272d4e;
+$purple: #7854f7;
+$main-fontsize: 1.125rem;
+$grey: #94a2b3;
+$blue: #299ef3;

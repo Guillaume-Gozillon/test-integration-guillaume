@@ -1,8 +1,42 @@
+.hero-section {
+  height: 100vh;
+  background: rgb(229, 239, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(229, 239, 255, 1) 0%,
+    rgba(229, 239, 255, 1) 87%,
+    rgba(229, 239, 255, 1) 100%
+  );
+}
+
 .hero-content {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10rem auto;
+  & .hero-desc {
+    color: $grey;
+    line-height: 1.4rem;
+    margin-top: 1.3rem;
+  }
 }
 
 #stripe-card {
   background: white;
   border-radius: 1rem;
+}
+
+.create-account {
+  padding: 1rem 2.5rem;
+  background: $purple;
+  border-radius: 2rem;
+  color: white;
+}
+
+.left-hero {
+  width: 50%;
+}
+
+.connect {
+  margin-top: 3rem;
 }
