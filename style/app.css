@@ -101,7 +101,7 @@ header a:hover {
 }
 
 .hero-section {
-  height: 100vh;
+  overflow: hidden;
   background: #e5efff;
   background: -webkit-gradient(linear, left top, left bottom, from(#e5efff), color-stop(87%, #e5efff), to(#e5efff));
   background: linear-gradient(180deg, #e5efff 0%, #e5efff 87%, #e5efff 100%);
@@ -111,22 +111,13 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 90%;
-  margin: 10rem auto;
+  margin: 10rem 0 10rem 5%;
 }
 
 .hero-content .hero-desc {
   color: #94a2b3;
   line-height: 1.4rem;
   margin-top: 1.3rem;
-}
-
-#stripe-card {
-  background: white;
-  border-radius: 1rem;
 }
 
 .create-account {
@@ -140,7 +131,84 @@ header a:hover {
   width: 50%;
 }
 
+.right-hero {
+  position: relative;
+  width: 50%;
+}
+
+.right-hero > * {
+  position: absolute;
+}
+
+.right-hero .img-hero {
+  border-radius: 1rem;
+}
+
+.right-hero .hero-grille {
+  z-index: 0;
+}
+
+.right-hero .exterieur {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 15rem;
+}
+
+.right-hero .stripe {
+  bottom: -7rem;
+  left: 12rem;
+  background: white;
+  z-index: 2;
+  width: 19rem;
+}
+
+.right-hero .commerce {
+  top: 5rem;
+  right: 0;
+  height: 20rem;
+  z-index: 1;
+  border-radius: 0;
+}
+
+.right-hero .vertical-grid-purple {
+  bottom: -150px;
+  right: 0;
+  height: 25rem;
+}
+
+.right-hero .vertical-grid {
+  top: -2rem;
+  right: 8rem;
+  height: 25rem;
+}
+
+.right-hero .horizontal-grid {
+  width: 25rem;
+  top: 84px;
+  left: -2rem;
+}
+
+.right-hero .yellow-shape {
+  z-index: 3;
+  top: 20rem;
+  left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #FFBA49;
+}
+
 .connect {
   margin-top: 3rem;
+}
+
+.connect p :first-child {
+  margin-right: 0.5rem;
+}
+
+.connect p :last-child {
+  margin-left: 0.5rem;
+  color: #299ef3;
 }
 /*# sourceMappingURL=app.css.map */
