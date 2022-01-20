@@ -1,3 +1,46 @@
-h1 {
+@mixin flex-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 7rem;
+  margin-right: 2rem;
+}
+.hero-section {
+  background: rgb(229, 239, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(229, 239, 255, 1) 0%,
+    rgba(229, 239, 255, 1) 87%,
+    rgba(229, 239, 255, 1) 100%
+  );
+}
+
+header {
+  width: 90%;
+  padding: 2rem 0;
+  margin: auto;
+  align-items: center;
+  @include flex-horizontal;
+  & nav {
+    @include flex-horizontal;
+    & ul {
+      @include flex-horizontal;
+      align-items: center;
+      & li {
+        margin-right: 1rem;
+        list-style-type: none;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  &:hover {
     color: red;
+  }
 }

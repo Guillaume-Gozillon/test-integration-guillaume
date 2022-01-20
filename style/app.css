@@ -5,7 +5,80 @@
           box-sizing: border-box;
 }
 
-h1 {
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+  width: 7rem;
+  margin-right: 2rem;
+}
+
+.hero-section {
+  background: #e5efff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5efff), color-stop(87%, #e5efff), to(#e5efff));
+  background: linear-gradient(180deg, #e5efff 0%, #e5efff 87%, #e5efff 100%);
+}
+
+header {
+  width: 90%;
+  padding: 2rem 0;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  margin-right: 1rem;
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
   color: red;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#stripe-card {
+  background: white;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=app.css.map */
