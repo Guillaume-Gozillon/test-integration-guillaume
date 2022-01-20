@@ -1,12 +1,6 @@
 .hero-section {
   overflow: hidden;
-  background: rgb(229, 239, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(229, 239, 255, 1) 0%,
-    rgba(229, 239, 255, 1) 87%,
-    rgba(229, 239, 255, 1) 100%
-  );
+  background: linear-gradient(#e5efff, white);
 }
 
 .hero-content {
@@ -44,7 +38,7 @@
   }
   & .exterieur {
     top: 0;
-    left: 0;
+    right: 25rem;
     z-index: 2;
     width: 15rem;
   }
@@ -75,16 +69,16 @@
   & .horizontal-grid {
     width: 25rem;
     top: 84px;
-    left: -2rem;
+    right: 15rem;
   }
-  & .yellow-shape{
+  & .yellow-shape {
     z-index: 3;
     top: 20rem;
-    left: 1.5rem;
+    right: 32.5rem;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background: #FFBA49;
+    background: #ffba49;
   }
 }
 
