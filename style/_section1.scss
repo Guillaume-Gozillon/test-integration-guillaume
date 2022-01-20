@@ -1,0 +1,34 @@
+@for $i from 1 through 3 {
+  .grid-#{$i} {
+    margin-top: 3rem * $i;
+  }
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .services-cards {
+    width: 20rem;
+    justify-self: center;
+    & img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    & > *:not(img) {
+      margin: 1rem auto;
+    }
+    & h3 {
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 400;
+    }
+    & p {
+      color: $grey;
+      line-height: 1.6rem;
+    }
+    & a {
+      color: $blue;
+    }
+  }
+}
+

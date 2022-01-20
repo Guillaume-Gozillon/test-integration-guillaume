@@ -26,7 +26,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 3.438rem;
+  font-size: 3rem;
 }
 
 #logo {
@@ -120,7 +120,7 @@ header a:hover {
 
 .hero-content .hero-desc {
   color: #94a2b3;
-  line-height: 1.4rem;
+  line-height: 1.45rem;
   margin-top: 1.3rem;
 }
 
@@ -214,5 +214,72 @@ header a:hover {
 .connect p :last-child {
   margin-left: 0.5rem;
   color: #299ef3;
+}
+
+.grid-1 {
+  margin-top: 3rem;
+}
+
+.grid-2 {
+  margin-top: 6rem;
+}
+
+.grid-3 {
+  margin-top: 9rem;
+}
+
+.services-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.services-container .services-cards {
+  width: 20rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.services-container .services-cards img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.services-container .services-cards > *:not(img) {
+  margin: 1rem auto;
+}
+
+.services-container .services-cards h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.services-container .services-cards p {
+  color: #94a2b3;
+  line-height: 1.6rem;
+}
+
+.services-container .services-cards a {
+  color: #299ef3;
+}
+
+.purple {
+  position: relative;
+}
+
+.purple-container {
+  background: #7854f7;
+}
+
+::-moz-selection {
+  color: white;
+  background-color: #7854f7;
+}
+
+::selection {
+  color: white;
+  background-color: #7854f7;
 }
 /*# sourceMappingURL=app.css.map */
