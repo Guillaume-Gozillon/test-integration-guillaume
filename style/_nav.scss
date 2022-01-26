@@ -26,6 +26,7 @@ header {
 
 header a {
   color: $dark;
+  transition: 0.5s;
   &:hover {
     color: $purple;
   }

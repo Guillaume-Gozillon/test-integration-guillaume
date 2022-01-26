@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abril+Fatface&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <script src="./index.js" defer></script>
+    <script type="module" src="./index.js" defer></script>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -22,9 +22,9 @@
         <nav>
           <img id="logo" src="./img/logo.svg" alt="logo hiboost" />
           <ul>
-            <li><a href="#section1">Ultricies justo</a></li>
-            <li><a href="#section2">Parturient montes</a></li>
-            <li><a href="#">Nulla in vulputate</a></li>
+            <li class="underline"><a href="#section1">Ultricies justo</a></li>
+            <li class="underline"><a href="#section2">Parturient montes</a></li>
+            <li class="underline"><a href="#">Nulla in vulputate</a></li>
           </ul>
         </nav>
         <div class="loggin">
@@ -33,7 +33,6 @@
           <img src="./img/search.svg" alt="" />
         </div>
       </header>
-
       <section class="hero-content">
         <div class="left-hero">
           <h1>
@@ -155,7 +154,71 @@
           </div>
         </div>
       </section>
-      <section class="section3"></section>
+      <!-- SECTION 3 -->
+      <section class="section3">
+        <h2>Sed vel metus fringilla, consequat ligula eu.</h2>
+        <div class="section3-container">
+          <div class="text-section3 active">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              maximus imperdiet arcu, ut dictum augue venenatis et.
+            </p>
+            <p>
+              Sed neque dui, posuere quis ullamcorper et, faucibus nec dolor.
+              Vestibulum eu euismod.
+            </p>
+          </div>
+          <div class="text-section3">
+            <p>
+              A temporibus quam est blanditiis nesciunt vel alias similique ex
+              numquam quam in veritatis incidunt et blanditiis accusantium.
+            </p>
+            <p>
+              Qui quos quis sed pariatur officia eos officia adipisci cum sunt
+              dignissimos et rerum velit.
+            </p>
+          </div>
+          <div class="text-section3">
+            <p>
+              A excepturi commodi iste cumque nam voluptatem veritatis ea
+              pariatur aperiam hic eligendi quam sed omnis saepe non minima
+            </p>
+            <p>
+              Id dolor aliquam ut blanditiis iure ab quasi harum et vero maiores
+              33 similique minus et consectetur doloribus.
+            </p>
+          </div>
+          <div class="arrow">
+            <img class="left-arrow" src="./img/arrow.svg" alt="" />
+            <img class="right-arrow" src="./img/arrow.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 4 -->
+      <section class="section4">
+        <div class="section4-container">
+          <p>
+            A convallis aliquet.
+            <span class="bold">Morbi rutrum blandit sapien</span>, vel
+            <br />
+            mollis neque consequat non.
+          </p>
+          <a href="#">Découvrir</a>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-container">
+        <ul>
+          <li><a href="#">Nullam vitae</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Morbi rutrum blandit sapien</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Vel mollis neque consequa</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

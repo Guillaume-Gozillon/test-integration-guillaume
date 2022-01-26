@@ -1,0 +1,16 @@
+footer {
+  background: $purple;
+  & .footer-container {
+    @include flex-horizontal;
+    justify-content: space-between;
+    max-width: 55rem;
+    margin: auto;
+  }
+  & li {
+    list-style: none;
+    padding: 3rem 0;
+  }
+  & a {
+    color: white;
+  }
+}

@@ -30,16 +30,16 @@ h2 {
 }
 
 @import 'variables';
+@import 'utils';
 @import 'nav';
 @import 'hero-content';
 @import 'section1';
 @import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'footer';
 
 ::selection {
   color: white;
   background-color: $purple;
-}
-
-.section3 {
-  height: 45vh;
 }

@@ -1,0 +1,21 @@
+.section4 {
+  background: #5F37EF;
+  color: white;
+  font-size: $main-fontsize;
+  padding: 3rem 0;
+  & .section4-container {
+    @include flex-horizontal;
+    align-items: center;
+    max-width: 47rem;
+    margin: auto;
+  }
+  & a {
+    color: white;
+    padding: 1rem 2.5rem;
+    border: white 2px solid;
+    border-radius: 2rem;
+  }
+  & p {
+    line-height: 1.9rem;
+  }
+}
