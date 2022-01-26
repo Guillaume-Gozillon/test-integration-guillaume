@@ -14,6 +14,11 @@
     padding: 1rem 2.5rem;
     border: white 2px solid;
     border-radius: 2rem;
+    transition: all 0.3s;
+    &:hover {
+      background: white;
+      color: #5F37EF;
+    }
   }
   & p {
     line-height: 1.9rem;

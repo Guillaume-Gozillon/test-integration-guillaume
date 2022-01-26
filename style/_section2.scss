@@ -68,6 +68,48 @@
     background: $green;
     border-radius: 2rem;
     color: white;
+    transition: all 0.3s;
+    &:hover {
+      background: white;
+      color: $green;
+    }
+  }
+}
+
+// BACKGROUND
+.section2-assets {
+  position: absolute;
+  &.big-right {
+    top: 29rem;
+    right: 6rem;
+    width: 17rem;
+  }
+  &.small-right {
+    top: 29rem;
+    right: 25rem;
+    z-index: 1;
+    width: 3.5rem;
+  }
+  &.big-left {
+    top: 12rem;
+    left: 11rem;
+    width: 19rem;
+  }
+  &.small-left {
+    top: 9rem;
+    left: 9rem;
+    width: 3.5rem;
+  }
+  &.vertical-asset {
+    top: 19rem;
+    left: 12rem;
+    width: 8rem;
+  }
+  &.horizontal-asset {
+    bottom: 2rem;
+    left: 72rem;
+    width: 8rem;
+    transform: rotate(90deg);
   }
 }
 

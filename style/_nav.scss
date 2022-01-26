@@ -42,6 +42,9 @@ header a {
     color: white;
   }
   & a {
-    margin-right: 1rem;
+    margin: 0.5rem 1rem 0 0;
+  }
+  & img {
+    margin-top: 0.5rem;
   }
 }

@@ -137,7 +137,11 @@ header a:hover {
 }
 
 .loggin a {
-  margin-right: 1rem;
+  margin: 0.5rem 1rem 0 0;
+}
+
+.loggin img {
+  margin-top: 0.5rem;
 }
 
 .hero-section {
@@ -157,6 +161,7 @@ header a:hover {
   color: #94a2b3;
   line-height: 1.45rem;
   margin-top: 1.3rem;
+  width: 98%;
 }
 
 .create-account {
@@ -164,6 +169,14 @@ header a:hover {
   background: #7854f7;
   border-radius: 2rem;
   color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.create-account:hover {
+  background: white;
+  color: #7854f7;
+  border: 2px solid #7854f7;
 }
 
 .left-hero {
@@ -188,36 +201,38 @@ header a:hover {
 }
 
 .right-hero .exterieur {
-  top: 0;
+  top: -4rem;
   right: 25rem;
   z-index: 2;
-  width: 15rem;
+  width: 13rem;
 }
 
 .right-hero .stripe {
-  bottom: -7rem;
-  left: 12rem;
+  bottom: -2rem;
+  left: 16rem;
   background: white;
   z-index: 2;
   width: 19rem;
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(120, 84, 247, 0.1);
+          box-shadow: 0px 0px 19px 0px rgba(120, 84, 247, 0.1);
 }
 
 .right-hero .commerce {
-  top: 5rem;
-  right: 0;
+  top: -1rem;
+  right: 0rem;
   height: 20rem;
   z-index: 1;
   border-radius: 0;
 }
 
 .right-hero .vertical-grid-purple {
-  bottom: -150px;
+  bottom: -7rem;
   right: 0;
   height: 25rem;
 }
 
 .right-hero .vertical-grid {
-  top: -2rem;
+  top: -8rem;
   right: 8rem;
   height: 25rem;
 }
@@ -225,12 +240,12 @@ header a:hover {
 .right-hero .horizontal-grid {
   width: 25rem;
   top: 84px;
-  right: 15rem;
+  right: 14rem;
 }
 
 .right-hero .yellow-shape {
   z-index: 3;
-  top: 20rem;
+  top: 15rem;
   right: 32.5rem;
   width: 3rem;
   height: 3rem;
@@ -401,14 +416,63 @@ header a:hover {
   background: #70c217;
   border-radius: 2rem;
   color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.purple-container a:hover {
+  background: white;
+  color: #70c217;
+}
+
+.section2-assets {
+  position: absolute;
+}
+
+.section2-assets.big-right {
+  top: 29rem;
+  right: 6rem;
+  width: 17rem;
+}
+
+.section2-assets.small-right {
+  top: 29rem;
+  right: 25rem;
+  z-index: 1;
+  width: 3.5rem;
+}
+
+.section2-assets.big-left {
+  top: 12rem;
+  left: 11rem;
+  width: 19rem;
+}
+
+.section2-assets.small-left {
+  top: 9rem;
+  left: 9rem;
+  width: 3.5rem;
+}
+
+.section2-assets.vertical-asset {
+  top: 19rem;
+  left: 12rem;
+  width: 8rem;
+}
+
+.section2-assets.horizontal-asset {
+  bottom: 2rem;
+  left: 72rem;
+  width: 8rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .section3 {
-  position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(#e5efff), to(white));
   background: linear-gradient(0deg, #e5efff, white);
   width: 100%;
-  height: 60vh;
+  height: 43rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,6 +483,7 @@ header a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .section3 .section3-container {
@@ -438,10 +503,11 @@ header a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 40%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  z-index: 1;
 }
 
 .section3 .section3-container p {
@@ -457,10 +523,20 @@ header a:hover {
           transform: scale(2rem);
 }
 
+.section3 h2 {
+  font-size: 2.5rem;
+  margin: 2.5rem 0 -4rem;
+}
+
 .arrow {
+  bottom: -7rem;
+  right: 1rem;
   position: absolute;
-  bottom: 4rem;
-  right: 36rem;
+}
+
+.arrow > * {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .arrow .left-arrow {
@@ -469,8 +545,13 @@ header a:hover {
 }
 
 .arrow .left-arrow:hover {
-  -webkit-transform: scale(2rem);
-          transform: scale(2rem);
+  -webkit-transform: scale(1.7) rotate(180deg);
+          transform: scale(1.7) rotate(180deg);
+}
+
+.arrow .right-arrow:hover {
+  -webkit-transform: scale(1.55);
+          transform: scale(1.55);
 }
 
 .section3-container .text-section3 {
@@ -491,12 +572,17 @@ header a:hover {
           justify-content: space-between;
   color: #94a2b3;
   line-height: 1.5rem;
+  text-align: center;
 }
 
 .section3-container .text-section3.active {
   display: inherit;
   -webkit-animation: fade 0.8s;
           animation: fade 0.8s;
+}
+
+.section-plus-arrow {
+  position: relative;
 }
 
 @-webkit-keyframes fade {
@@ -515,6 +601,61 @@ header a:hover {
   to {
     opacity: 1;
   }
+}
+
+.users {
+  position: absolute;
+}
+
+.users.i1 {
+  top: 7rem;
+  right: 22rem;
+  width: 5rem;
+}
+
+.users.i2 {
+  top: 18rem;
+  right: 14rem;
+  width: 7rem;
+}
+
+.users.i3 {
+  top: 34rem;
+  right: 21rem;
+  width: 3.8rem;
+}
+
+.users.i4 {
+  top: 32rem;
+  left: 18rem;
+  width: 5rem;
+}
+
+.users.i5 {
+  top: 17rem;
+  left: 10rem;
+  width: 4rem;
+}
+
+.users.i6 {
+  top: 9rem;
+  left: 21rem;
+  width: 5rem;
+}
+
+.users.green-grid-user {
+  top: 23rem;
+  left: 31rem;
+  width: 8rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  z-index: 0;
+}
+
+.users.red-grid-user {
+  top: 16rem;
+  right: 26rem;
+  width: 16rem;
 }
 
 .section4 {
@@ -543,6 +684,13 @@ header a:hover {
   padding: 1rem 2.5rem;
   border: white 2px solid;
   border-radius: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section4 a:hover {
+  background: white;
+  color: #5F37EF;
 }
 
 .section4 p {

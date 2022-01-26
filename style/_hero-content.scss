@@ -10,6 +10,7 @@
     color: $grey;
     line-height: 1.45rem;
     margin-top: 1.3rem;
+    width: 98%;
   }
 }
 
@@ -18,6 +19,12 @@
   background: $purple;
   border-radius: 2rem;
   color: white;
+  transition: all 0.3s;
+  &:hover {
+    background: white;
+    color: $purple;
+    border: 2px solid $purple;
+  }
 }
 
 .left-hero {
@@ -37,43 +44,44 @@
     z-index: 0;
   }
   & .exterieur {
-    top: 0;
+    top: -4rem;
     right: 25rem;
     z-index: 2;
-    width: 15rem;
+    width: 13rem;
   }
   & .stripe {
-    bottom: -7rem;
-    left: 12rem;
+    bottom: -2rem;
+    left: 16rem;
     background: white;
     z-index: 2;
     width: 19rem;
+    box-shadow: 0px 0px 19px 0px rgba($purple, 0.1);
   }
   & .commerce {
-    top: 5rem;
-    right: 0;
+    top: -1rem;
+    right: 0rem;
     height: 20rem;
     z-index: 1;
     border-radius: 0;
   }
   & .vertical-grid-purple {
-    bottom: -150px;
+    bottom: -7rem;
     right: 0;
     height: 25rem;
   }
   & .vertical-grid {
-    top: -2rem;
+    top: -8rem;
     right: 8rem;
     height: 25rem;
   }
   & .horizontal-grid {
     width: 25rem;
     top: 84px;
-    right: 15rem;
+    right: 14rem;
   }
   & .yellow-shape {
     z-index: 3;
-    top: 20rem;
+    top: 15rem;
     right: 32.5rem;
     width: 3rem;
     height: 3rem;
